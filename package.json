@@ -29,6 +29,7 @@
     "commitizen": "^4.2.3",
     "cz-lerna-changelog": "^2.0.3",
     "husky": "^4.3.8",
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "npx": "^10.2.2"
   }
 }
