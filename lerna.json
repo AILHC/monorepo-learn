@@ -12,9 +12,6 @@
   "command": {
     "bootstrap": {
       "hoist": true
-    },
-    "version": {
-      "conventionalCommits": true
     }
   },
   "message":"chore: publish"
