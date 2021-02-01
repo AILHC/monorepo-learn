@@ -15,7 +15,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "husky": {
@@ -27,6 +27,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
     "cz-lerna-changelog": "^2.0.3",
     "husky": "^4.3.8",
     "lerna": "^3.22.1",
