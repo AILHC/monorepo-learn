@@ -5,14 +5,14 @@
   "publish": {
     "allowBranch": "main"
   },
-  "ignoreChanges": ["*.md"],
+  "ignoreChanges": [
+    "*.md"
+  ],
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
-    "bootstrap": {
-      "hoist": true
-    }
+    
   },
-  "message":"chore: publish"
+  "message": "chore: publish"
 }
