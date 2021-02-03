@@ -6,6 +6,7 @@ export class LayerMgr<T> implements layer.IMgr<T> {
     protected defaultType: LayerClassType;
     protected _layerMap: Map<number, layer.ILayer | any>;
     private _root: T;
+    public fjj() {}
     public init(layerEnum: any, defaultClass: LayerClassType, classMap?: Map<string, LayerClassType>, root?: T) {
         if (root) this._root = root;
         this.layerEnum = layerEnum;
