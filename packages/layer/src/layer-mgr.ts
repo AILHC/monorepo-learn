@@ -1,18 +1,12 @@
 type LayerClassType = layer.LayerClassType;
 
 export class LayerMgr<T> implements layer.IMgr<T> {
-
-
     protected layerEnum: any;
     protected classMap: Map<string, LayerClassType>;
     protected defaultType: LayerClassType;
     protected _layerMap: Map<number, layer.ILayer | any>;
     private _root: T;
-
-    public init(layerEnum: any,
-        defaultClass: LayerClassType
-        , classMap?: Map<string, LayerClassType>
-        , root?: T) {
+    public init(layerEnum: any, defaultClass: LayerClassType, classMap?: Map<string, LayerClassType>, root?: T) {
         if (root) this._root = root;
         this.layerEnum = layerEnum;
         this.defaultType = defaultClass;
@@ -26,7 +20,7 @@ export class LayerMgr<T> implements layer.IMgr<T> {
         for (let i = 0; i < len; i++) {
             layerClassNameAndLayerName = layerEnum[i].split("_");
             className = layerClassNameAndLayerName[0];
-            layerName = layerClassNameAndLayerName[1]
+            layerName = layerClassNameAndLayerName[1];
             if (!layerName) {
                 layerName = className;
             }
@@ -46,7 +40,7 @@ export class LayerMgr<T> implements layer.IMgr<T> {
         if (this._layerMap) {
             this._layerMap.forEach((value: layer.ILayer) => {
                 value.onAdd(root);
-            })
+            });
         }
     }
     public get root(): T {
@@ -106,6 +100,4 @@ export class LayerMgr<T> implements layer.IMgr<T> {
         }
         return layer;
     }
-
-
 }

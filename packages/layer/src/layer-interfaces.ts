@@ -7,7 +7,7 @@ declare global {
             onInit(layerName: string, layerType: number, layerMgr: IMgr): void;
             /**
              * 当被添加到根节点时
-             * @param root 
+             * @param root
              */
             onAdd(root: any): void;
             /**
@@ -24,7 +24,7 @@ declare global {
             onDestroy?(): void;
             /**
              * 当有节点添加时
-             * @param node 
+             * @param node
              */
             onNodeAdd(node: any): void;
         }
@@ -44,18 +44,15 @@ declare global {
              * @param typeMap 自定义层级处理类字典
              * @param root 层级根节点
              */
-            init(layerEnum: any,
-                defaultType: LayerClassType,
-                typeMap?: Map<string, LayerClassType>,
-                root?: T): void;
+            init(layerEnum: any, defaultType: LayerClassType, typeMap?: Map<string, LayerClassType>, root?: T): void;
             /**
              * 设置层级根节点
-             * @param root 
+             * @param root
              */
             setLayerRoot(root: T): void;
             /**
              * 添加层级
-             * @param layer 层级对象 
+             * @param layer 层级对象
              */
             addLayer(layer: layer.ILayer): boolean;
             /**
@@ -65,26 +62,26 @@ declare global {
             removeLayer(layerType: number): boolean;
             /**
              * 隐藏指定层级
-             * @param layerType 
+             * @param layerType
              */
             hideLayer(layerType: number): void;
             /**
              * 显示指定层级
-             * @param layerType 
+             * @param layerType
              */
             showLayer(layerType: number): void;
             /**
              * 添加渲染节点到层级
-             * @param node 
-             * @param layerType 
+             * @param node
+             * @param layerType
              */
             addNodeToLayer(node: T, layerType: number): void;
             /**
              * 获取层级
-             * @param layerType 
+             * @param layerType
              */
             getLayerByType<K extends layer.ILayer>(layerType: number): K;
         }
     }
 }
-export { }
+export {};
