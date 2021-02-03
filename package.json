@@ -11,7 +11,7 @@
     "packages/*"
   ],
   "scripts": {
-    "version": "lerna version --conventional-commits",
+    "vcnp": "lerna version --conventional-commits --no-push",
     "bootstrap": "lerna bootstrap",
     "clean_nm": "lerna clean",
     "cm": "git-cz",
